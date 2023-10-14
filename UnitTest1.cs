@@ -22,7 +22,7 @@ namespace TestLab2
             var result = Register.CheckRegister(login, password, password2);
 
             // Assert
-            Assert.AreEqual(("False", "В пароле отсутствует минимум один специальный символ"), result);
+            Assert.AreEqual(("False", "Р’ РїР°СЂРѕР»Рµ РѕС‚СЃСѓС‚СЃС‚РІСѓРµС‚ РјРёРЅРёРјСѓРј РѕРґРёРЅ СЃРїРµС†РёР°Р»СЊРЅС‹Р№ СЃРёРјРІРѕР»"), result);
         }
 
         [Test]
@@ -38,7 +38,7 @@ namespace TestLab2
 
             // Assert
      
-            Assert.AreEqual(("False","Пустая строка в качестве логина"), result);
+            Assert.AreEqual(("False","РџСѓСЃС‚Р°СЏ СЃС‚СЂРѕРєР° РІ РєР°С‡РµСЃС‚РІРµ Р»РѕРіРёРЅР°"), result);
         }
 
         [Test]
@@ -54,7 +54,7 @@ namespace TestLab2
 
             // Assert
      
-            Assert.AreEqual(("False","Длина логина меньше 5 символов"), result);
+            Assert.AreEqual(("False","Р”Р»РёРЅР° Р»РѕРіРёРЅР° РјРµРЅСЊС€Рµ 5 СЃРёРјРІРѕР»РѕРІ"), result);
         }
 
 
@@ -71,7 +71,7 @@ namespace TestLab2
 
             // Assert
    
-            Assert.AreEqual(("False","Пользователь с таким логином уже зарегистрирован"), result);
+            Assert.AreEqual(("False","РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ СЃ С‚Р°РєРёРј Р»РѕРіРёРЅРѕРј СѓР¶Рµ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅ"), result);
         }
 
         [Test]
@@ -87,7 +87,7 @@ namespace TestLab2
 
             // Assert
 
-            Assert.AreEqual(("False", "Пользователь с таким логином уже зарегистрирован"), result);
+            Assert.AreEqual(("False", "РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ СЃ С‚Р°РєРёРј Р»РѕРіРёРЅРѕРј СѓР¶Рµ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅ"), result);
         }
 
         [Test]
@@ -103,7 +103,7 @@ namespace TestLab2
 
             // Assert
 
-            Assert.AreEqual(("False", "Пользователь с таким логином уже зарегистрирован"), result);
+            Assert.AreEqual(("False", "РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ СЃ С‚Р°РєРёРј Р»РѕРіРёРЅРѕРј СѓР¶Рµ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅ"), result);
         }
 
         [Test]
@@ -119,7 +119,7 @@ namespace TestLab2
 
             // Assert
 
-            Assert.AreEqual(("False","Логин содержит символы, отличные от латиницы, цифр и знака подчеркивания"), result);
+            Assert.AreEqual(("False","Р›РѕРіРёРЅ СЃРѕРґРµСЂР¶РёС‚ СЃРёРјРІРѕР»С‹, РѕС‚Р»РёС‡РЅС‹Рµ РѕС‚ Р»Р°С‚РёРЅРёС†С‹, С†РёС„СЂ Рё Р·РЅР°РєР° РїРѕРґС‡РµСЂРєРёРІР°РЅРёСЏ"), result);
         }
 
         [Test]
@@ -135,7 +135,7 @@ namespace TestLab2
 
             // Assert
  
-            Assert.AreEqual(("False","Номер телефона не удовлетворяет заданному формату +x-xxx-xxx-xxxx"), result);
+            Assert.AreEqual(("False","РќРѕРјРµСЂ С‚РµР»РµС„РѕРЅР° РЅРµ СѓРґРѕРІР»РµС‚РІРѕСЂСЏРµС‚ Р·Р°РґР°РЅРЅРѕРјСѓ С„РѕСЂРјР°С‚Сѓ +x-xxx-xxx-xxxx"), result);
         }
 
         [Test]
@@ -151,7 +151,7 @@ namespace TestLab2
 
             // Assert
        
-            Assert.AreEqual(("False","Email не удовлетворяет общему формату xxx@xxx.xxx"), result);
+            Assert.AreEqual(("False","Email РЅРµ СѓРґРѕРІР»РµС‚РІРѕСЂСЏРµС‚ РѕР±С‰РµРјСѓ С„РѕСЂРјР°С‚Сѓ xxx@xxx.xxx"), result);
         }
 
         [Test]
@@ -167,7 +167,7 @@ namespace TestLab2
 
             // Assert
 
-            Assert.AreEqual(("False","Пустая строка в качестве пароля"), result);
+            Assert.AreEqual(("False","РџСѓСЃС‚Р°СЏ СЃС‚СЂРѕРєР° РІ РєР°С‡РµСЃС‚РІРµ РїР°СЂРѕР»СЏ"), result);
         }
 
         [Test]
@@ -182,7 +182,7 @@ namespace TestLab2
             var result = Register.CheckRegister(login, password, password2);
 
             // Assert
-            Assert.AreEqual(("False", "Длина пароля меньше 7 символов"), result);
+            Assert.AreEqual(("False", "Р”Р»РёРЅР° РїР°СЂРѕР»СЏ РјРµРЅСЊС€Рµ 7 СЃРёРјРІРѕР»РѕРІ"), result);
         }
 
 
@@ -199,7 +199,7 @@ namespace TestLab2
 
             // Assert
 
-            Assert.AreEqual(("False","Заданные пароли совпадают"), result);
+            Assert.AreEqual(("False","Р—Р°РґР°РЅРЅС‹Рµ РїР°СЂРѕР»Рё СЃРѕРІРїР°РґР°СЋС‚"), result);
         }
 
         [Test]
@@ -215,7 +215,7 @@ namespace TestLab2
 
             // Assert
 
-            Assert.AreEqual(("False","В пароле присутствуют недопустимые символы"), result);
+            Assert.AreEqual(("False","Р’ РїР°СЂРѕР»Рµ РїСЂРёСЃСѓС‚СЃС‚РІСѓСЋС‚ РЅРµРґРѕРїСѓСЃС‚РёРјС‹Рµ СЃРёРјРІРѕР»С‹"), result);
         }
 
         [Test]
@@ -231,7 +231,7 @@ namespace TestLab2
 
             // Assert
      
-            Assert.AreEqual(("False","В пароле отсутствует минимум одна заглавная буква"), result);
+            Assert.AreEqual(("False","Р’ РїР°СЂРѕР»Рµ РѕС‚СЃСѓС‚СЃС‚РІСѓРµС‚ РјРёРЅРёРјСѓРј РѕРґРЅР° Р·Р°РіР»Р°РІРЅР°СЏ Р±СѓРєРІР°"), result);
         }
 
         [Test]
@@ -247,7 +247,7 @@ namespace TestLab2
 
             // Assert
      
-            Assert.AreEqual(("False","В пароле отсутствует минимум одна строчная буква"), result);
+            Assert.AreEqual(("False","Р’ РїР°СЂРѕР»Рµ РѕС‚СЃСѓС‚СЃС‚РІСѓРµС‚ РјРёРЅРёРјСѓРј РѕРґРЅР° СЃС‚СЂРѕС‡РЅР°СЏ Р±СѓРєРІР°"), result);
         }
 
         [Test]
@@ -263,7 +263,7 @@ namespace TestLab2
 
             // Assert
            
-            Assert.AreEqual(("False","В пароле отсутствует минимум одна цифра"), result);
+            Assert.AreEqual(("False","Р’ РїР°СЂРѕР»Рµ РѕС‚СЃСѓС‚СЃС‚РІСѓРµС‚ РјРёРЅРёРјСѓРј РѕРґРЅР° С†РёС„СЂР°"), result);
         }
 
         [Test]
@@ -279,7 +279,7 @@ namespace TestLab2
 
             // Assert
             
-            Assert.AreEqual(("False","В пароле отсутствует минимум один специальный символ"), result);
+            Assert.AreEqual(("False","Р’ РїР°СЂРѕР»Рµ РѕС‚СЃСѓС‚СЃС‚РІСѓРµС‚ РјРёРЅРёРјСѓРј РѕРґРёРЅ СЃРїРµС†РёР°Р»СЊРЅС‹Р№ СЃРёРјРІРѕР»"), result);
         }
         [Test]
         public void CheckRegister_InvalidLoginFormat_ReturnsFalseAndErrorMessage()
@@ -293,7 +293,7 @@ namespace TestLab2
             var result = Register.CheckRegister(login, password, password2);
 
             // Assert
-            Assert.AreEqual(("False", "Логин содержит символы, отличные от латиницы, цифр и знака подчеркивания"), result);
+            Assert.AreEqual(("False", "Р›РѕРіРёРЅ СЃРѕРґРµСЂР¶РёС‚ СЃРёРјРІРѕР»С‹, РѕС‚Р»РёС‡РЅС‹Рµ РѕС‚ Р»Р°С‚РёРЅРёС†С‹, С†РёС„СЂ Рё Р·РЅР°РєР° РїРѕРґС‡РµСЂРєРёРІР°РЅРёСЏ"), result);
         }
 
         [Test]
@@ -308,7 +308,7 @@ namespace TestLab2
             var result = Register.CheckRegister(login, password, password2);
 
             // Assert
-            Assert.AreEqual(("False", "Заданные пароли не совпадают"), result);
+            Assert.AreEqual(("False", "Р—Р°РґР°РЅРЅС‹Рµ РїР°СЂРѕР»Рё РЅРµ СЃРѕРІРїР°РґР°СЋС‚"), result);
         }
         [Test]
         public void CheckRegister_ValidData_ReturnsTrueAndEmptyErrorMessage()
@@ -322,7 +322,7 @@ namespace TestLab2
             var result = Register.CheckRegister(login, password, password2);
 
             // Assert
-            Assert.AreEqual(("True", "Регистрация прошла успешно"), result);
+            Assert.AreEqual(("True", "Р РµРіРёСЃС‚СЂР°С†РёСЏ РїСЂРѕС€Р»Р° СѓСЃРїРµС€РЅРѕ"), result);
         }
 
         [Test]
@@ -337,205 +337,9 @@ namespace TestLab2
             var result = Register.CheckRegister(login, password, password2);
 
             // Assert
-            Assert.AreEqual(("False", "В пароле присутствуют недопустимые символы"), result);
+            Assert.AreEqual(("False", "Р’ РїР°СЂРѕР»Рµ РїСЂРёСЃСѓС‚СЃС‚РІСѓСЋС‚ РЅРµРґРѕРїСѓСЃС‚РёРјС‹Рµ СЃРёРјРІРѕР»С‹"), result);
         }
 
     }
-
-
-    //[Test]
-    //public void CheckRegister_EmptyLogin_ReturnsFalseAndErrorMessage()
-    //{
-    //    // Arrange
-    //    string login = "";
-    //    string password = "ValidPassword123";
-    //    string password2 = "ValidPassword123";
-
-    //    // Act
-    //    var result = Register.CheckRegister(login, password, password2);
-
-    //    // Assert
-    //    Assert.AreEqual(("False", "Пустая строка в качестве логина"), result);
-    //}
-
-    //[Test]
-    //public void CheckRegister_ShortLogin_ReturnsFalseAndErrorMessage()
-    //{
-    //    // Arrange
-    //    string login = "short";
-    //    string password = "ValidPassword123";
-    //    string password2 = "ValidPassword123";
-
-    //    // Act
-    //    var result = Register.CheckRegister(login, password, password2);
-
-    //    // Assert
-    //    Assert.AreEqual(("False", "Длина логина меньше 5 символов"), result);
-    //}
-
-    //[Test]
-    //public void CheckRegister_ExistingUser_ReturnsFalseAndErrorMessage()
-    //{
-    //    // Arrange
-    //    string login = "user11";
-    //    string password = "ValidPassword123";
-    //    string password2 = "ValidPassword123";
-
-    //    // Act
-    //    var result = Register.CheckRegister(login, password, password2);
-
-    //    // Assert
-    //    Assert.AreEqual(("False", "Пользователь с таким логином уже зарегистрирован"), result);
-    //}
-
-    //[Test]
-    //public void CheckRegister_InvalidLoginFormat_ReturnsFalseAndErrorMessage()
-    //{
-    //    // Arrange
-    //    string login = "invalid login";
-    //    string password = "ValidPassword123";
-    //    string password2 = "ValidPassword123";
-
-    //    // Act
-    //    var result = Register.CheckRegister(login, password, password2);
-
-    //    // Assert
-    //    Assert.AreEqual(("False", "Логин содержит символы, отличные от латиницы, цифр и знака подчеркивания"), result);
-    //}
-
-    //[Test]
-    //public void CheckRegister_EmptyPassword_ReturnsFalseAndErrorMessage()
-    //{
-    //    // Arrange
-    //    string login = "validlogin";
-    //    string password = "";
-    //    string password2 = "";
-
-    //    // Act
-    //    var result = Register.CheckRegister(login, password, password2);
-
-    //    // Assert
-    //    Assert.AreEqual(("False", "Пустая строка в качестве пароля"), result);
-    //}
-
-    //[Test]
-    //public void CheckRegister_ShortPassword_ReturnsFalseAndErrorMessage()
-    //{
-    //    // Arrange
-    //    string login = "validlogin";
-    //    string password = "short";
-    //    string password2 = "short";
-
-    //    // Act
-    //    var result = Register.CheckRegister(login, password, password2);
-
-    //    // Assert
-    //    Assert.AreEqual(("False", "Длина пароля меньше 7 символов"), result);
-    //}
-
-    //[Test]
-    //public void CheckRegister_PasswordsNotEqual_ReturnsFalseAndErrorMessage()
-    //{
-    //    // Arrange
-    //    string login = "validlogin";
-    //    string password = "ValidPassword123";
-    //    string password2 = "DifferentPassword123";
-
-    //    // Act
-    //    var result = Register.CheckRegister(login, password, password2);
-
-    //    // Assert
-    //    Assert.AreEqual(("False", "Заданные пароли не совпадают"), result);
-    //}
-
-    //[Test]
-    //public void CheckRegister_InvalidPasswordFormat_ReturnsFalseAndErrorMessage()
-    //{
-    //    // Arrange
-    //    string login = "validlogin";
-    //    string password = "Invalid Password";
-    //    string password2 = "Invalid Password";
-
-    //    // Act
-    //    var result = Register.CheckRegister(login, password, password2);
-
-    //    // Assert
-    //    Assert.AreEqual(("False", "В пароле присутствуют недопустимые символы"), result);
-    //}
-
-    //[Test]
-    //public void CheckRegister_PasswordMissingUppercase_ReturnsFalseAndErrorMessage()
-    //{
-    //    // Arrange
-    //    string login = "validlogin";
-    //    string password = "password123";
-    //    string password2 = "password123";
-
-    //    // Act
-    //    var result = Register.CheckRegister(login, password, password2);
-
-    //    // Assert
-    //    Assert.AreEqual(("False", "В пароле отсутствует минимум одна заглавная буква"), result);
-    //}
-
-    //[Test]
-    //public void CheckRegister_PasswordMissingLowercase_ReturnsFalseAndErrorMessage()
-    //{
-    //    // Arrange
-    //    string login = "validlogin";
-    //    string password = "PASSWORD123";
-    //    string password2 = "PASSWORD123";
-
-    //    // Act
-    //    var result = Register.CheckRegister(login, password, password2);
-
-    //    // Assert
-    //    Assert.AreEqual(("False", "В пароле отсутствует минимум одна строчная буква"), result);
-    //}
-
-    //[Test]
-    //public void CheckRegister_PasswordMissingDigit_ReturnsFalseAndErrorMessage()
-    //{
-    //    // Arrange
-    //    string login = "validlogin";
-    //    string password = "Password";
-    //    string password2 = "Password";
-
-    //    // Act
-    //    var result = Register.CheckRegister(login, password, password2);
-
-    //    // Assert
-    //    Assert.AreEqual(("False", "В пароле отсутствует минимум одна цифра"), result);
-    //}
-
-    //[Test]
-    //public void CheckRegister_PasswordMissingSpecialSymbol_ReturnsFalseAndErrorMessage()
-    //{
-    //    // Arrange
-    //    string login = "validlogin";
-    //    string password = "Password123";
-    //    string password2 = "Password123";
-
-    //    // Act
-    //    var result = Register.CheckRegister(login, password, password2);
-
-    //    // Assert
-    //    Assert.AreEqual(("False", "В пароле отсутствует минимум один специальный символ"), result);
-    //}
-
-    //[Test]
-    //public void CheckRegister_ValidData_ReturnsTrueAndEmptyErrorMessage()
-    //{
-    //    // Arrange
-    //    string login = "validlogin";
-    //    string password = "ValidPassword123!";
-    //    string password2 = "ValidPassword123!";
-
-    //    // Act
-    //    var result = Register.CheckRegister(login, password, password2);
-
-    //    // Assert
-    //    Assert.AreEqual(("True", "Регистрация прошла успешно"), result);
-    //}
-
+ 
 }
